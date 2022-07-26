@@ -24,6 +24,12 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+       	<string>Used to demonstrate image picker plugin</string>
+       	<key>NSMicrophoneUsageDescription</key>
+       	<string>Used to capture audio for image picker plugin</string>
+       	<key>NSPhotoLibraryUsageDescription</key>
+       	<string>Used to demonstrate image picker plugin</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -45,5 +51,7 @@
 	<false/>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Our application needs permission to write photos...</string>
 </dict>
 </plist>

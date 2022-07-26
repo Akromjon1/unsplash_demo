@@ -1,19 +1,16 @@
 import 'dart:convert';
 import 'package:flutter/material.dart' hide Image;
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:my_dog_app/models/collections.dart';
-import 'package:my_dog_app/models/search_photos_result_model.dart';
 import 'package:my_dog_app/services/network_service.dart';
 import 'package:my_dog_app/views/image_view.dart';
-
-import '../models/seach_collections_result_model.dart';
 import '../models/single_photo_model.dart';
 
 class CollectionView extends StatefulWidget {
   final int crossAxisCount;
   final String api;
   final Map<String, String> params;
-  const CollectionView({Key? key, this.crossAxisCount = 2, required this.api, required this.params}) : super(key: key);
+  final ScrollPhysics? physics;
+  const CollectionView({Key? key, this.crossAxisCount = 2, required this.api, required this.params, this.physics}) : super(key: key);
 
   @override
   State<CollectionView> createState() => _GalleryViewState();
@@ -74,6 +71,7 @@ class _GalleryViewState extends State<CollectionView> with AutomaticKeepAliveCli
   @override
   Widget build(BuildContext context) {
     return MasonryGridView.count(
+      shrinkWrap: true,
       controller: controller,
       crossAxisCount: widget.crossAxisCount,
       itemCount: items.length,
@@ -81,7 +79,7 @@ class _GalleryViewState extends State<CollectionView> with AutomaticKeepAliveCli
       crossAxisSpacing: 10,
       padding: const EdgeInsets.all(10),
       itemBuilder: (context, index) {
-        return ImageView(image: images[index]);
+        return ImageView(image: images[index], crossAxisCount: widget.crossAxisCount,);
       },
     );
   }

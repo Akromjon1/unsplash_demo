@@ -13,6 +13,7 @@ class NetworkService {
   static const DEVELOPMENT_SERVER = "api.unsplash.com";
   static const DEPLOYMENT_SERVER = "api.unsplash.com";
 
+
   static String get BASEURL {
     if(isTester) {
       return DEVELOPMENT_SERVER;
@@ -32,6 +33,7 @@ class NetworkService {
   static const String API_GET_ALL_IMAGES = "/photos";
   static const String API_LIST_COLLECTIONS = "/collections";
   static const String API_SEARCH_COLLECTIONS = "/search/photos";
+  static const String API_GET_USERS_PHOTOS= "/users/";
 
 
 
@@ -103,7 +105,7 @@ class NetworkService {
   }
 
   static Future<String?> MULTIPART(String api, String filePath, Map<String, String> body) async {
-    var uri = Uri.https(BASEURL, api);
+    var uri = Uri.https("api.thedogapi.com", api);
     var request = MultipartRequest('POST', uri);
     request.headers.addAll((headersForUpload));
     request.files.add(await MultipartFile.fromPath('file', filePath, contentType: MediaType("image", "jpeg")));
@@ -118,6 +120,7 @@ class NetworkService {
       return response.reasonPhrase;
     }
   }
+
 
   // params
   static Map<String, String> paramsEmpty() {

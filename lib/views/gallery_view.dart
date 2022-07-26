@@ -10,7 +10,8 @@ class GalleryView extends StatefulWidget {
   final int crossAxisCount;
   final String api;
   final Map<String, String> params;
-  const GalleryView({Key? key, this.crossAxisCount = 2, required this.api, required this.params}) : super(key: key);
+  final ScrollPhysics? physics;
+  const GalleryView({Key? key, this.crossAxisCount = 2, required this.api, required this.params, this.physics}) : super(key: key);
 
   @override
   State<GalleryView> createState() => _GalleryViewState();
@@ -62,6 +63,7 @@ class _GalleryViewState extends State<GalleryView> with AutomaticKeepAliveClient
   @override
   Widget build(BuildContext context) {
     return MasonryGridView.count(
+      shrinkWrap: true,
       controller: controller,
       crossAxisCount: widget.crossAxisCount,
       itemCount: items.length,
@@ -69,7 +71,7 @@ class _GalleryViewState extends State<GalleryView> with AutomaticKeepAliveClient
       crossAxisSpacing: 10,
       padding: const EdgeInsets.all(10),
       itemBuilder: (context, index) {
-        return ImageView(image: items[index]);
+        return ImageView(image: items[index], crossAxisCount: widget.crossAxisCount,);
       },
     );
   }

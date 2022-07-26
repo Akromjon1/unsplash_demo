@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_dog_app/pages/mobile/home_screen.dart';
+import 'package:my_dog_app/pages/profile_page.dart';
 
 import 'mobile/search_view.dart';
 
@@ -64,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                 HomeScreen(crossAxisCount: widget.crossAxisCount,),
                 SearchView(crossAxisCount: widget.crossAxisCount,),
                 Container(color: Colors.blue,),
-                Container(color: Colors.green,),
+                ProfilePage(),
               ],
             ),
           ),
