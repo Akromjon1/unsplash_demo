@@ -16,7 +16,7 @@ A small attempt to make an Photo app for learning manner.
 <img src="screens/wallpaper.png" height="500em" />&nbsp;&nbsp;&nbsp;&nbsp;
 
 ### Recipe page
-<img src="screens/recipe.png" height="500em" />&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="screens/recipes.png" height="500em" />&nbsp;&nbsp;&nbsp;&nbsp;
 
 ### Category page
 <img src="screens/category.png" height="500em" />&nbsp;&nbsp;&nbsp;&nbsp;
