@@ -1,17 +1,36 @@
-# my_dog_app
+# Flutter dog application
+A small attempt to make an Photo app for learning manner.
 
-For Flutter B17
+## 🤓 Author(s)
+**Mr Akrom Akhmadjanov** [![Instagram Follow](<img src="https://sssinstagram.com/images/download-online.png" height="100em" /> )](https://instagram.com/akhmadjanov_a_)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## ScreenShots
+### Home Page
+<img src="screens/homepage.png" height="500em" />
 
-A few resources to get you started if this is your first Flutter project:
+### Search page
+<img src="screens/search.png" height="500em" /> &nbsp;&nbsp;&nbsp;&nbsp; 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Wallpaper page
+<img src="screens/wallpaper.png" height="500em" />&nbsp;&nbsp;&nbsp;&nbsp;
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# unsplash_demo
+### Recipe page
+<img src="screens/recipe.png" height="500em" />&nbsp;&nbsp;&nbsp;&nbsp;
+
+### Category page
+<img src="screens/category.png" height="500em" />&nbsp;&nbsp;&nbsp;&nbsp;
+
+### Detail page
+<img src="screens/detail.png" height="500em" />&nbsp;&nbsp;&nbsp;&nbsp;
+
+### Saved page
+<img src="screens/saved.png" height="500em" />&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+## ✨ Requirements
+* Any Operating System (ie. MacOS X, Linux, Windows, iOS, Android)
+* Any IDE with Flutter SDK installed (ie.  Android Studio, VSCode, IntelliJ, etc)
+* A little knowledge of Dart and Flutter
+* A big brain to think like real developer
+
